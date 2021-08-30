@@ -1,13 +1,13 @@
 import Participant from './js/participant.js';
 import Vue from 'vue';
 import router from '../../router';
-import { setRoomOnLive } from '@/api/rooms.js';
+// import { setRoomOnLive } from '@/api/rooms.js';
 
 import kurentoUtils from 'kurento-utils';
 import axios from 'axios';
 import _ from 'lodash';
 
-const API_SERVER_URL = 'https://i5a107.p.ssafy.io:8446';
+const API_SERVER_URL = 'https://www.focuspresentation.com:8446';
 //const API_SERVER_URL = 'https://localhost:8446';
 
 export default {
@@ -40,7 +40,6 @@ export default {
   mutations: {
     WS_INIT(state, url) {
       state.ws = new WebSocket(url);
-      return false;
     },
     /*     WS_ONMESSAGE(state, parsedMessage) {
       state.serverMessage = parsedMessage;
@@ -151,7 +150,6 @@ export default {
         context.dispatch('onServerMessage', parsedMessage);
         return false;
       };
-      return false;
     },
     // 웹소켓 메시지에 따른 동작
     onServerMessage(context, message) {
@@ -310,13 +308,13 @@ export default {
     leaveRoom(context) {
       router.push({ path: '/dashboard' });
       console.log(context.state.roomNumber);
-      if (context.state.myName === context.state.manager) {
-        const roomData = {
-          room_id: context.state.roomNumber,
-          on_live: false,
-        };
-        setRoomOnLive(roomData);
-      }
+      // if (context.state.myName === context.state.manager) {
+      //   const roomData = {
+      //     room_id: context.state.roomNumber,
+      //     on_live: false,
+      //   };
+      //   setRoomOnLive(roomData);
+      // }
       context.commit('LEAVE_ROOM');
     },
     receiveVideoResponse(context, result) {

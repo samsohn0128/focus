@@ -69,18 +69,20 @@
     (&을 붙이면 background에서 실행)
 4. 브라우저를 통해 접속 (크롬 부라우저 권장)
 
-    [](https://i5a107.p.ssafy.io)
+    [Focus](https://www.focuspresentation.com)
 
 # Service (Build와 Service 중 한 가지 선택)
 
 1. kms container 실행
     1. docker ps -a
     2. docker container start {kms container id}
+    
 2. Spring Boot 프로젝트 .jar로 packaging
     1. cd ~/focus/springboot
     2. mvn package
     3. cd ~/focus/webrtc
     4. mvn package
+    
 3. Service 등록을 위해 .service 작성
     1. vi /etc/systemd/system/focus-api.service
     2. 아래 내용을 작성
@@ -109,13 +111,13 @@
         [Unit]
         Description=Focus Kurento Server
         After=network.target
-
+        
         [Service]
         ExecStart=/bin/bash -c "exec java -jar -Dkms.url=wss://localhost:8433/kurento /home/ubuntu/focus/webrtc/target/WebRtc-0.0.1-SNAPSHOT.jar"
-
+        
         User=root
         Group=root
-
+        
         [Install]
         WantedBy=multi-user.target
         ```
@@ -123,12 +125,17 @@
 4. 서비스에 등록
     1. sudo systemctl enable focus-api.service
     2. sudo systemctl enable focus-kurento.service
+    
 5. 서비스 실행
     1. sudo service focus-api start
     2. sudo service focus-kurento start
+    
 6. 서비스 상태 확인
     1. sudo service focus-api status
     2. sudo service focus-kurento status
+    
 7. 브라우저를 통해 접속 (크롬 부라우저 권장)
 
-    [](https://i5a107.p.ssafy.io)
+    [Focus](https://www.focuspresentation.com)
+
+[Ubuntu .jar as a Service](https://lts0606.tistory.com/225)

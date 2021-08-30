@@ -18,7 +18,7 @@
 // import "./template.scss";
 import _ from 'lodash';
 
-const FILE_PATH = 'https://i5a107.p.ssafy.io:8446/board/image';
+const FILE_PATH = 'https://www.focuspresentation.com:8446/board/image';
 // const FILE_PATH = '/home/ubuntu/presentations';
 
 export default {
