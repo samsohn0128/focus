@@ -15,7 +15,7 @@
       * 발표자는 미팅룸에서 발표자료를 __넘길 수__ 있습니다.
   * 대시보드
       * 방은 Now, Future, History로 구분됩니다.
-    
+      
     * Now 그룹은 __시작시간 < 현재시간__ 인 방 목록을 보여줍니다.
     * Future 그룹은 __현재시간 < 시작시간__ 인 방 목록을 보여줍니다.
     * History 그룹은 __종료시간__ 이 존재하는 방 목록을 보여줍니다.
@@ -72,8 +72,7 @@
 
 ### 배포환경
 - __URL__ : https://www.focuspresentation.com
-- __배포 여부__ : O 
-- __접속 가능__ : 접속 가능
+- __배포 환경__ : spring-boot-starter-tomcat-2.5.3(tomcat-embed-core 9.0.50)
 - __HTTPS 적용__ : O 
 - __PORT__ : 8443 (80/443 -> 8443 Port Forwarding)
 
