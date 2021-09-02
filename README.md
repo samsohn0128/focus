@@ -78,7 +78,10 @@
 - __PORT__ : 8443 (80/443 -> 8443 Port Forwarding)
 
 ### 배포하기
-* [Deploy & Build](documents/21-08-20_Focus_Deploy&Build.md)
+
+- [KMS Setting](documents/21-09-02_KMS_Setting.md)
+
+* [Deploy & Build](documents/21-09-02_Focus_Deploy&Build.md)
 
 ## 역할
 ### 김민지(BE)
