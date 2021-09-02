@@ -6,6 +6,7 @@
   * [YouTube](https://www.youtube.com/watch?v=RCCz8Ckgg8k)
   * [Notion 개발 WIKI](https://www.notion.so/7-FOCUS-a4db4765db0d47059f1a743e2e87347c)
   * ```FOCUS``` 는 온라인 발표환경과 오프라인 발표 환경의 차이를 줄이기 위해 화상영상에 발표자료를 함께 띄워서 제어하는 서비스입니다.
+  * ```FOCUS``` 는 아이디어가 창의적이고, [SSAFY(Samsung Software Academy For Youth, 삼성 청년 소프트웨어 아카데미)](https://www.ssafy.com)에서 제공하는 스켈레톤 코드를 사용하지 않고 프로젝트를 진행하여 반출 허가를 받은 프로젝트입니다.
 
 ### 주요 기능
   * 발표자료 제어
