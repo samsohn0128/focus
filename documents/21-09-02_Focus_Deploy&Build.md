@@ -2,8 +2,6 @@
 
 # Front-End Build 및 EC2에 업로드
 
----
-
 1. Front-End Node Modules Install
     1. /frontend에서 npm install
 2. Front-End Build into /backend/webrtc/src/main/resources/static
@@ -13,8 +11,6 @@
 4. WinSCP를 이용해서 /backend/springboot 프로젝트 EC2에 업로드
 
 # Kurento Media Server 설정
-
----
 
 1. EC2에서 docker를 이용하여 kms 기본 설정
 
@@ -38,8 +34,6 @@
 
 # MySQL 설치
 
----
-
 1. sudo apt-get update
 2. sudo apt-get install mysql-server
 3. sudo systemctl enable mysql
@@ -55,15 +49,11 @@
 
 # Java 설치
 
----
-
 1. sudo apt-get update
 2. sudo apt-get install openjdk-8-jdk
 3. java -version
 
 # EC2의 보안 규칙 변경
-
----
 
 1. 22번 포트 (putty ssh 접속), 80번 포트(http), 443번 포트(https) 허용
     1. sudo ufw allow {port#}
@@ -73,8 +63,6 @@
     1. sudo ufw enable
 
 # Port Forwarding
-
----
 
 1. 80번, 443번 포트를  8443번 포트로 Port Forwarding
     1. sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8443
@@ -88,8 +76,6 @@
 [Port forwarding with iptables](https://www.cogini.com/blog/port-forwarding-with-iptables/)
 
 # Build (Build와 Service 중 한 가지 선택)
-
----
 
 1. kms container 실행
     1. docker ps -a
@@ -107,8 +93,6 @@
     [](https://i5a107.p.ssafy.io)
 
 # Service (Build와 Service 중 한 가지 선택)
-
----
 
 1. kms container 실행
     1. docker ps -a
@@ -146,13 +130,13 @@
         [Unit]
         Description=Focus Kurento Server
         After=network.target
-
+        
         [Service]
         ExecStart=/bin/bash -c "exec java -jar -Dkms.url=wss://localhost:8433/kurento /home/ubuntu/focus/focus_kurento.jar"
-
+        
         User=root
         Group=root
-
+        
         [Install]
         WantedBy=multi-user.target
         ```
