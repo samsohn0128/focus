@@ -163,7 +163,7 @@
 ### Controller 
 * [보러가기✔](documents/21-08-19_Controller.md)
 ### WebSocket
-* [보러가기✔](documents/21-08-20_Kurento_WebSocket_Message)
+* [보러가기✔](documents/21-08-20_Kurento_WebSocket_Message.md)
 ### Component
 * [보러가기✔](documents/21-08-19_FrontendComponent.md)
 ### 사용자 시나리오
