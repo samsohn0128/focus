@@ -4,6 +4,9 @@
 ### ssl-keystore ###
 *.p12
 
+### Database  ###
+*.properties
+
 ### Java ###
 # Compiled class file
 *.class
