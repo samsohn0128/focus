@@ -5,7 +5,8 @@
 *.p12
 
 ### Database  ###
-*.properties
+springboot/src/main/resources/application.properties
+webrtc/src/main/resources/application.properties
 
 ### Java ###
 # Compiled class file
