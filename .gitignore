@@ -1,13 +1,6 @@
 # Created by httpswww.toptal.comdevelopersgitignoreapiwindows,java,vue,vuejs
 # Edit at httpswww.toptal.comdevelopersgitignoretemplates=windows,java,vue,vuejs
 
-### ssl-keystore ###
-*.p12
-
-### Database  ###
-springboot/src/main/resources/application.properties
-webrtc/src/main/resources/application.properties
-
 ### Java ###
 # Compiled class file
 *.class
