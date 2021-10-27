@@ -33,16 +33,16 @@
     - TURNSERVER_ENABLED=1
 - sudo vim /etc/turnserver.conf
     - listening-port=3478
-    tls-listening-port=5349
-    listening-ip={private IP}
-    external-ip={public IP}/{private IP}
-    relay-ip={public IP}
-    fingerprint
-    lt-cred-mech
-    user=myuser:mypassword
-    realm=myrealm
-    log-file=/var/log/turn.log
-    simple-log
+    - tls-listening-port=5349
+    - listening-ip={private IP}
+    - external-ip={public IP}/{private IP}
+    - relay-ip={public IP}
+    - fingerprint
+    - lt-cred-mech
+    - user=myuser:mypassword
+    - realm=myrealm
+    - log-file=/var/log/turn.log
+    - simple-log
 - sudo service coturn restart
 
 # Kurento STUN/TURN Settings
